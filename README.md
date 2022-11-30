@@ -17,7 +17,31 @@ Run these commands respectively
     PORT=4000
     DB_URL=// your MongoDB connection strings
    ```
-   
+- create `.gitignore` file with following content
+
+
+  ```
+    /node_modules
+    /.pnp
+    .pnp.js
+    .env
+
+    /coverage
+
+    /build
+
+    .DS_Store
+    .env.local
+    .env.development.local
+    .env.test.local
+    .env.production.local
+
+    npm-debug.log*
+    yarn-debug.log*
+    yarn-error.log*
+
+    ```
+
 - run `npm run dev` command in the terminal
 
 If you see those logs in the console, congrats you made it :)
