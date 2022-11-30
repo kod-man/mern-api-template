@@ -41,6 +41,27 @@ Run these commands respectively
     yarn-error.log*
 
     ```
+    
+- create `.eslintrc.js` file with following contents
+ ```
+    module.exports = {
+    env: {
+        node: true,
+        commonjs: true,
+        es2021: true,
+    },
+    extends: "eslint:recommended",
+    overrides: [],
+    parserOptions: {
+    ecmaVersion: "latest",
+    },
+    rules: {
+        "no-unused-vars": "warn",
+    },
+    };
+
+ 
+  ```
 
 - run `npm run dev` command in the terminal
 
